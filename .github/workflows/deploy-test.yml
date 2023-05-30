@@ -8,7 +8,7 @@ on:
 jobs:
   # Re use the Build Step
   build:
-    uses: ./.github/workflows/build.yml@test
+    uses: ./.github/workflows/build.yml
   deploy:
     environment: test
     needs: build
